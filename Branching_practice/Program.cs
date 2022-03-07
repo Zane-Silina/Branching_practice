@@ -1,4 +1,5 @@
-﻿short myNum1 = 66; 
+﻿//Task 1
+short myNum1 = 66; 
 short myNum2 = 777;  
 
 // 3./4. Verify which variable is the largest + smallest
@@ -92,3 +93,36 @@ var differ = myNum1 - myNum2;
 var positive = Math.Abs(Math.Round((double)differ, 2));  // change declared data type from integer to floating type to execute
 
 Console.WriteLine($"The difference between {myNum1} and {myNum2} is {positive}");
+
+//TASK 2
+
+var time = 20;
+var day = 17;
+var month = 6;
+var year = -2018;
+
+if (time > 0 && time < 12)
+{
+    Console.WriteLine("Good morning Sunshine!");
+}
+if (time >= 13 && time <= 19)
+{
+    Console.WriteLine("Good afternoon. Work Hard!");
+}
+if (time >= 20 && time <= 24)
+{
+    Console.WriteLine("Good evening. Get some rest!");
+}
+else if (time < 0 || time > 24)
+{
+    Console.WriteLine("Time input incorrect. Try again!");
+}
+if ((day >= 1 && day <= 31) && (month >= 1 && month <= 12) && (year >= 1 && year <= 2022))
+{
+    Console.WriteLine($"{year}/{ month}/{day}");
+}
+
+else
+{
+    Console.WriteLine("Date input wrong. Try again!");
+}
